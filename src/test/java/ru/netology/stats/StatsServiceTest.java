@@ -1,12 +1,14 @@
+package ru.netology.stats;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class StatServiceTest {
+class StatsServiceTest {
 
     @Test
     void shoudCalculateSum() {
-        StatService service = new StatService();
+        StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 180;
 
@@ -17,7 +19,7 @@ class StatServiceTest {
 
     @Test
     void shoudCalculateAverage() {
-        StatService service = new StatService();
+        StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 15;
 
@@ -28,7 +30,7 @@ class StatServiceTest {
 
     @Test
     void shoudFindMinMonth() {
-        StatService service = new StatService();
+        StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 9;
 
@@ -39,7 +41,7 @@ class StatServiceTest {
 
     @Test
     void shoudFindMaxMonth() {
-        StatService service = new StatService();
+        StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 8;
 
@@ -50,7 +52,7 @@ class StatServiceTest {
 
     @Test
     void shoudFindUnderAverage() {
-        StatService service = new StatService();
+        StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 5;
 
@@ -61,7 +63,7 @@ class StatServiceTest {
 
     @Test
     void shoudFindOverAverage() {
-        StatService service = new StatService();
+        StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 5;
 

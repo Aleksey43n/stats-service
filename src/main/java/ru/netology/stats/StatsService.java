@@ -1,4 +1,6 @@
-public class StatService {
+package ru.netology.stats;
+
+public class StatsService {
 
     public int calculateSum(int[] sales) {
         int sum = 0;
